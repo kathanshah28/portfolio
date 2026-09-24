@@ -1,0 +1,39 @@
+# Dependencies
+**/node_modules/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Next.js build outputs
+**/.next/
+**/out/
+**/build/
+**/dist/
+
+# Environment files (CRITICAL: Never commit secrets)
+**/.env
+**/.env*.local
+**/.env.production
+
+# IDE & OS files
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.idea/
+.vscode/
+
+# Logs
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+Daily_log.md
+learning_errors.md
+Project_steps.md
