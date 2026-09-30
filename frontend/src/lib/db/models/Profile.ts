@@ -8,6 +8,7 @@ const ProfileSchema = new Schema<Profile>(
         headline: { type: String, required: true },
         bio: { type: String, required: true },
         avatarUrl: { type: String },
+        resumeUrl: { type: String },
         contact: {
             email: { type: String, required: true },
             github: { type: String, required: true },

@@ -15,6 +15,14 @@ const ProjectSchema = new Schema<Project>(
         },
         technologies: [{ type: String, required: true }],
         summary: { type: String, required: true },
+        media: [
+            {
+                type: { type: String, enum: ["image", "video"], required: true },
+                url: { type: String, required: true },
+                caption: { type: String },
+                isCover: { type: Boolean, default: false },
+            },
+        ],
         aiAnalysis: {
             overview: { type: String, required: true },
             architecture: { type: String },

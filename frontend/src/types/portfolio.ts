@@ -12,6 +12,13 @@ export interface Skill {
 
 export type ProjectCategory = "AI/ML" | "Full Stack Web" | "Mobile" | "Systems" | "DevOps";
 
+export interface ProjectMedia {
+    type: "image" | "video";
+    url: string;
+    caption?: string;
+    isCover?: boolean;
+}
+
 export interface Project {
     _id?: string;
     title: string;
@@ -21,6 +28,7 @@ export interface Project {
     category: ProjectCategory;
     technologies: string[];
     summary: string;
+    media: ProjectMedia[];
     aiAnalysis: {
         overview: string;
         architecture?: string;
@@ -73,6 +81,7 @@ export interface Profile {
     headline: string;
     bio: string;
     avatarUrl?: string;
+    resumeUrl?: string; // Cloudinary PDF/Document URL
     contact: {
         email: string;
         github: string;
