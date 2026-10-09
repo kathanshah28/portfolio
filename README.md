@@ -71,6 +71,7 @@ portfolio-workspace/
 │   └── requirements.txt          # Python dependencies
 │
 └── README.md                     # Project documentation
+```
 
 ## Getting Started
 
